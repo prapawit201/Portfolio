@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   position: absolute;
   top: 0;
@@ -119,6 +122,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(79, 71, 119);
 }
 .menu ul {
   position: relative;
@@ -132,7 +136,7 @@ header .logo {
   color: #111;
 }
 .menu ul li a:hover {
-  color: rgb(82, 68, 156);
+  color: rgb(255, 255, 255);
 }
 .line-1 {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -165,4 +169,21 @@ header .logo {
   to {
     border-right-color: transparent;
   }
+}
+#section1 {
+  height: 1300px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 100vh;
+}
+#section1 h1 {
+  color: black;
+  z-index: 2;
+}
+#section2 {
+  height: 1500px;
+  background-color: rgb(50, 231, 50);
+}
+#section2 p {
+  color: black;
+  z-index: 2;
 }
