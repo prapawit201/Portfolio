@@ -202,6 +202,7 @@ header .logo {
   display: block;
 }
 #section2 p {
+  text-align: center;
   color: black;
   z-index: 2;
 }
