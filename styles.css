@@ -217,6 +217,10 @@ header .logo {
   opacity: 0.7;
   background-color: rgb(255, 255, 255);
 }
+.story a {
+  text-decoration: none;
+  color: #fff;
+}
 #section03 a {
   padding-top: 10px;
   margin-bottom: 70px;
@@ -460,4 +464,21 @@ footer .footer p {
   .right {
     left: 0%;
   }
+}
+.experience {
+  margin: 100px 200px 300px 200px;
+}
+.experience section img {
+  /* margin-left: 0; */
+  float: left;
+  border-radius: 30px;
+  /* display: inline; */
+}
+
+#textcarlytic {
+  margin-left: 500px;
+  width: 600px;
+}
+.carlytic #textcarlytic p {
+  display: inline;
 }
