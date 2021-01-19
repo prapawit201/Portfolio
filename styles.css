@@ -182,6 +182,8 @@ header .logo {
 .information {
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 90vh;
 }
 #section2 {
   height: 600px;
@@ -474,11 +476,15 @@ footer .footer p {
   border-radius: 30px;
   /* display: inline; */
 }
-
+.carlytic{
+  width: 100%;
+}
 #textcarlytic {
   margin-left: 500px;
   width: 600px;
+ 
 }
-.carlytic #textcarlytic p {
-  display: inline;
+
+section p {
+  padding-top: 80px;
 }
