@@ -7,3 +7,25 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.carlytic{
+margin: 50px 100px 50px 60px;
+}
+.center {
+  display: block;
+  margin : 50px 30px 50px 150px;
+  width: 80%;
+}
+.background{
+  float: left;
+  left: 0;
+  width: 50%;
+}
+ #carlyticdescription{
+padding-top: 150px;
+}
+#carlyticdescription h3{
+  text-align: center;
+}
+#carlyticdescription p{
+  text-align: justify;
+}
