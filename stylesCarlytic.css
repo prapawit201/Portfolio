@@ -1,31 +1,108 @@
 /* font : poppin from google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.carlytic{
-margin: 50px 100px 50px 60px;
+.carlytic {
+  margin: 50px 100px 50px 100px;
+}
+.carlytic h2 {
+  font-size: 1em;
+  color: darkslategrey;
+
+  text-align: center;
+}
+.carlytic a {
+  text-decoration: underline;
+
+  color: black;
+}
+.carlytic h2 a:hover {
+  color: cornflowerblue;
+}
+.main{
+  width: 100%;
 }
 .center {
   display: block;
-  margin : 50px 30px 50px 150px;
+  margin: 50px 30px 50px 150px;
   width: 80%;
 }
-.background{
+.background {
   float: left;
   left: 0;
   width: 50%;
 }
- #carlyticdescription{
-padding-top: 150px;
+#carlyticdescription {
+  padding-top: 150px;
 }
-#carlyticdescription h3{
+#carlyticdescription h3 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#carlyticdescription p {
+  margin-top: 30px;
+  text-align: justify;
+}
+#carylyticarchitecture {
+  padding-top: 200px;
+}
+#carylyticarchitecture h3 {
+  text-transform: uppercase;
   text-align: center;
 }
-#carlyticdescription p{
+.architecture {
+  float: right;
+  right: 0;
+  width: 55%;
+}
+.tools {
+  float: left;
+  left: 0;
+  width: 50%;
+  margin-right: 50px;
+}
+.tool {
+  padding-top: 450px;
+}
+.tool h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tool p {
   text-align: justify;
+  margin-top: 30px;
+}
+#infrastructure {
+  float: left;
+  left: 0;
+  width: 550px;
+}
+#infrastructure h3 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#infrastructure p {
+  text-align: justify;
+  margin-top: 30px;
+}
+#description {
+  float: right;
+  right: 0;
+  width: 550px;
+}
+#description h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+description p {
+  text-align: justify;
+  margin-top: 30px;
 }
