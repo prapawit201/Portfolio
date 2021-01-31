@@ -1,0 +1,154 @@
+/* font : poppin from google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.topic{
+
+    padding-top: 50px;
+    text-align: center;
+}
+.topic h2{
+    color: black;   
+
+}
+.topic p{
+ margin: 20px 220px 0px 220px;
+ text-align: justify;
+ text-align: center;
+}
+.carlytic {
+  margin: 40px 100px 50px 100px;
+}
+.carlytic h2 {
+  font-size: 1em;
+  color: black;
+  text-align: center;
+}
+.carlytic a {
+  text-decoration: underline;
+
+  color: black;
+}
+.carlytic h2 a:hover {
+  color: cornflowerblue;
+}
+.main{
+  width: 100%;
+  
+}
+.center {
+  display: block;
+  margin: 0px 150px 50px 150px;
+  width: 75%;
+}
+.background {
+  float: left;
+  left: 0;
+  width: 50%;
+}
+
+#carlyticpb{
+  padding-top: 50px;
+
+}
+#carlyticdescription {
+  
+    margin-left: 650px ;
+  padding-top: 100px;
+ 
+ 
+}
+#carlyticdescription h3 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+#carlyticdescription p {
+  margin-top: 30px;
+  text-align: justify;
+
+}
+#carylyticarchitecture {
+  padding-top: 150px;
+}
+#carylyticarchitecture h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.architecture {
+  float: right;
+  right: 0;
+  width: 55%;
+}
+.tools {
+  float: left;
+  left: 0;
+  width: 50%;
+  margin-right: 50px;
+}
+.tool {
+  padding-top: 450px;
+}
+.tool h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tool p {
+  text-align: justify;
+  margin-top: 30px;
+}
+#infrastructure {
+  float: left;
+  left: 0;
+  width: 550px;
+}
+#infrastructure h3 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#infrastructure p {
+  text-align: justify;
+  margin-top: 30px;
+}
+#description {
+  float: right;
+  right: 0;
+  width: 550px;
+}
+#description h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+description p {
+  text-align: justify;
+  margin-top: 30px;
+}
+.overlay2{
+  bottom: 0;
+  width: 1500px;
+  margin-top: 450px;
+  min-height: 30vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #031a43,
+    #081a4e,
+    #141957,
+    #231560
+  );
+  align-items: center;
+}
+.footer p{
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+
+}

@@ -88,15 +88,17 @@
           </div>
         </div>
       </a>
-      <div class="container left" data-aos="fade-up">
-        <div class="content">
-          <h2>2019</h2>
-          <p>
-          <h3>Mini Game @SIT open house</h3> Mathematic game for SIT Open house 2019
-          by using java language and Java GUI
-          </p>
+      <a href="/sitopenhouse.html">
+        <div class="container left" data-aos="fade-up">
+          <div class="content">
+            <h2>2019</h2>
+            <p>
+            <h3>Mini Game @SIT open house</h3> Mathematic game for SIT Open house 2019
+            by using java language and Java GUI
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
       <div class="container right" data-aos="fade-up">
         <div class="content">
           <h2>2018</h2>
@@ -106,17 +108,19 @@
           </p>
         </div>
       </div>
-      <div class="container left" data-aos="fade-up">
-        <div class="content">
+      <a href="/alpaca.html">
+        <div class="container left" data-aos="fade-up">
+          <div class="content">
 
-          <h2>2017</h2>
-          <p>
-          <h3>Hello World Alpaca</h3> Hello World Alpaca is the workshop camp for who want to be a good IT
-          that's can practice for developer like a Frondend developer , Backend developer and etc.
-          </p>
+            <h2>2017</h2>
+            <p>
+            <h3>Hello World Alpaca</h3> Hello World Alpaca is the workshop camp for who want to be a good IT
+            that's can practice for developer like a Frondend developer , Backend developer and etc.
+            </p>
 
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -131,12 +135,42 @@
   </div>
   <div class="experience">
     <div class="carlytic" id="carlytic">
-      <section><img
-          src="https://scontent.fbkk23-1.fna.fbcdn.net/v/t31.0-8/18738567_1464221300338826_2354281095777595539_o.jpg?_nc_cat=101&ccb=2&_nc_sid=e3f864&_nc_eui2=AeEcqMoNJvjil4fJhxZxciG0GfXZwFAQJ1sZ9dnAUBAnW-vnmGTvF-b5Z1tJiK_Z963ygmNbcZQ3nhpRhJRr3Jz8&_nc_ohc=X60K6xfUkIEAX_PGXlH&_nc_ht=scontent.fbkk23-1.fna&oh=f241227e8148b373a663af5b39059ef6&oe=6028DD94"
-          alt="" width="400px" height="250px">
-      <section id="textcarlytic">  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, excepturi omnis. Iusto nobis doloremque
-          enim veritatis tenetur voluptatem quibusdam nesciunt.</p> </section>  
-      </section>
+      <h2>Acitivty | Gallery</h2>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/images/activity/webtech1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/webtech2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/alpacagroup.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/wip10.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/wip11.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/nurse.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/images/activity/genlakorn.jpg" style="width:100%">
+        </div>
+
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+      </div>
     </div>
   </div>
   <footer>
@@ -153,6 +187,25 @@
   <script src="app.js"></script>
   <script>
     AOS.init();
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
   </script>
 </body>
 
