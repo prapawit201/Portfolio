@@ -5,26 +5,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+ 
+}
+.containter{
+  max-width: 1080px;
+  font-size: 0.2em;
 }
 .topic{
-
     padding-top: 50px;
     text-align: center;
 }
 .topic h2{
-    color: black;   
-
+    color: black;  
 }
 .topic p{
- margin: 20px 220px 0px 220px;
  text-align: justify;
  text-align: center;
 }
 .carlytic {
-  margin: 40px 100px 50px 100px;
+  margin: 5% 10% 5% 10%;
 }
-.carlytic h2 {
-  font-size: 1em;
+.carlytic h3 {
+  font-size: 1.3rem;
   color: black;
   text-align: center;
 }
@@ -36,17 +38,8 @@
 .carlytic h2 a:hover {
   color: cornflowerblue;
 }
-.main{
-  width: 100%;
-  
-}
-.center {
-  display: block;
-  margin: 30px 0px 0px 80px;
-  width:25%;
-  align-items: center;
-    display: inline-block;
-}
+
+
 
 .footer p{
   padding-top: 100px;
@@ -55,7 +48,7 @@
 
 }.overlay2{
   bottom: 0;
-  width: 1500px;
+  width: 100%;
   margin-top: 50px;
   min-height: 30vh;
   background-image: linear-gradient(
