@@ -44,6 +44,7 @@ header .logo {
   cursor: pointer;
 }
 .showcase {
+  width: 100%;
   position: absolute;
   right: 0;
   width: 100%;
@@ -80,9 +81,11 @@ header .logo {
 .text {
   position: relative;
   z-index: 10;
+  width: 100%;
+  left: 0%;
 }
 .text h2 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
@@ -93,7 +96,7 @@ header .logo {
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
-  max-width: 700px;
+  max-width: 500px;
 }
 .text a {
   display: inline-block;
@@ -113,31 +116,7 @@ header .logo {
   background: transparent;
   color: #fff;
 }
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-}
-.menu ul {
-  position: relative;
-}
-.menu ul li {
-  list-style: none;
-}
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
-.menu ul li a:hover {
-  color: rgb(255, 255, 255);
-}
+
 .line-1 {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 1.2em;
@@ -180,17 +159,12 @@ header .logo {
   z-index: 2;
 }
 .information {
-  margin: 0;
-  padding: 0;
+  margin: 25% 0% 5% 0%;
+
   width: 100%;
-  min-height: 90vh;
+
 }
-#section2 {
-  height: 600px;
-  background-color: rgb(255, 255, 255);
-  margin: 40px 300px;
-  padding-top: 120px;
-}
+
 #section2 img {
   background-color: #fff;
   height: 100px;
@@ -229,7 +203,7 @@ header .logo {
 }
 #section03 a span {
   position: absolute;
-  top: 0;
+  top: 10;
   left: 50%;
   width: 46px;
   height: 46px;
@@ -299,6 +273,7 @@ header .logo {
 }
 .demo a {
   position: absolute;
+  margin-top: 50%;
   bottom: 20px;
   left: 50%;
   z-index: 2;
