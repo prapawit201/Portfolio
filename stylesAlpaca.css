@@ -22,13 +22,14 @@
 }
 #carlyticdescription h3{
   margin: 2% auto 1%;
-  text-align: center;
+  text-align: left;
 }
 #carlyticdescription p{
-  text-align: center;
+  text-align: left;
 }
 #infrastructure h3{
-  margin: 2% 20% 0% 20%
+  
+  text-align: center;
 }
 #infrastructure p{
   text-align:justify;
