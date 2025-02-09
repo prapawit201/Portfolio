@@ -9,10 +9,20 @@
   -webkit-overflow-scrolling: touch;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
+ /* Style for the element */
+ .hover-animate {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* When hovered, apply animation */
+.hover-animate:hover {
+  animation: bounce 1s infinite; /* Animation when hovering */
+}
 
 header {
   position: absolute;
@@ -383,6 +393,7 @@ footer .footer p {
 
 /* Container around content */
 .container {
+  color: black;
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -422,9 +433,9 @@ footer .footer p {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid rgb(79, 71, 119);
+  border: medium solid #e6f7ff;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgb(79, 71, 119);
+  border-color: transparent transparent transparent #e6f7ff;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -436,9 +447,9 @@ footer .footer p {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid rgb(79, 71, 119);
+  border: medium solid #e6f7ff;
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(79, 71, 119) transparent transparent;
+  border-color: transparent #e6f7ff transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -449,7 +460,7 @@ footer .footer p {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: rgb(79, 71, 119);
+  background-color: #e6f7ff;
   position: relative;
   border-radius: 6px;
   cursor: pointer;
@@ -584,14 +595,13 @@ img {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(136, 154, 255);
-  color: white;
+  background-color: transparent;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   scroll-behavior: smooth;
 }
 
-#myBtn:hover {
+/* #myBtn:hover {
   background-color: rgb(255, 195, 117);
-}
+} */

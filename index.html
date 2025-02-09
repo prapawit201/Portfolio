@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Porfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <!-- AOS JS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/942/942925.png" type="image/png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/png">
 </head>
 
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button class="hover-animate animate__animated" id="myBtn" onclick="topFunction()"><img src="https://cdn3.iconfinder.com/data/icons/common-4/24/ui-21-512.png" width="30px"/></button>
 
   <section class="showcase">
     <header>
@@ -182,6 +187,8 @@
 
   <br><br>
   <div class="firstjob" id="secondjob" style="margin: 0 5% 0 5%;">
+    <hr>
+    <br>
     <br>
     <div class="topic"></div>
     <div class="col-sm">
@@ -375,11 +382,12 @@
     </div>
   </div>
   <br>
-  <hr>
-  <br>
-  <br>
 
-  <div class="project" id="project">
+
+  <div class="project" id="project" style="margin: 0 5% 0 5%;">
+    <hr>
+    <br>
+    <br>
     <center>
 
       <h2> Senior project "Carlytic"</h2>
@@ -474,10 +482,14 @@
 
     </div>
   </div>
+  
   <br>
-  <hr>
   <br>
-  <div class="openhouse" id="openhouse">
+  <div class="openhouse" id="openhouse" style="margin: 0 5% 0 5%;">
+  
+    <hr>
+    <br>
+    <br>
     <div class="topic" style="margin: 0 10% 0 10%;">
       <center>
         <h2>SIT Open House 2019</h2>
@@ -592,48 +604,35 @@
 
   </footer>
   <script src="app.js"></script>
+
   <script>
+    // AOS Initialization (เปิดใช้งาน AOS)
     AOS.init();
-    var slideIndex = 0;
-    showSlides();
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
-    }
-
-    //Get the button
+    // ฟังก์ชันการแสดงปุ่มขึ้นไปข้างบน
     var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
+    // เมื่อเลื่อนหน้าจอลง
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
+      // เลื่อนหน้ามากกว่า 100px
       if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-        mybutton.style.display = "block";
+        mybutton.style.display = "block";  // แสดงปุ่มเมื่อเลื่อนลงมา
       } else {
-        mybutton.style.display = "none";
+        mybutton.style.display = "none";  // ซ่อนปุ่มเมื่ออยู่ที่ขอบบน
       }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
+    // เมื่อคลิกปุ่มจะเลื่อนกลับไปที่ขอบบน
     function topFunction() {
-      document.body.scrollTop = 1600;
-      document.documentElement.scrollTop = 1600;
+      window.scrollTo({
+        top: 1600, 
+        behavior: "smooth"  // เลื่อนกลับไปขอบบนอย่างนุ่มนวล
+      });
     }
   </script>
+  
 </body>
 
 </html>
